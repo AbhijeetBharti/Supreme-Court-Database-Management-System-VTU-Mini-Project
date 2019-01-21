@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" type="text/css" href="css/box.css">
+    <link rel="stylesheet" type="text/css" href="css/menubar.css">
+    <link rel="stylesheet" type="text/css" href="css/pop.css">
+    <link rel="stylesheet" type="text/css" href="css/abtbody.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<style> 
+    .container1 {
+  width:1000px; 
+  height: 300px;
+        margin-top: 0px;
+}
+
+.leftbar {
+  width:300px; 
+  float:left; 
+  
+  height: 150px;
+  margin-top: 0px
+}
+.centerbar {
+  width:auto; 
+  height: 150px; 
+  float:center; 
+  margin-top: 10px;
+  margin-left:300px;
+}
+.centerbar p {
+  color: #ffffff;
+  
+  padding-top: 10px;
+}
+header
+{
+    background-color:#191970;
+	padding: 1px;
+    font-size: 15px;
+    color: white;
+}
+footer {
+    background-color: #191970;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 500px;
+    
+}
+</style>
+
+	<title>Supreme Court Of India</title>
+ 
+</head>
+<header>
+    	<center><h1>Supreme Court Of India</h1></center>
+    	<center><h3>|| यतो धर्मस्ततो जयः ||</h3></center>
+</header>
+
+		<div class="slideshow-container">
+<div class="mySlides fade">
+  
+  <img src="img/slide1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  
+  <img src="img/slide4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="img/slide3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+<ul>
+<li><a  href="anc.html">Home</a></li>
+  <li><a  href="anc.html">Notices &amp; Circulars</a></li>
+    <li><a  href="loggedinJV.php">Daily Orders</a></li>
+    <li><a   href="loggedinef.php">E-Filled</a></li>
+    <li style="float:right"><a class="active"  href="staffLogIn.html">Log Out</a></li>
+</ul>
+    
+    <body>
+<div class="container1">
+<div class="leftbar">
+<div class="card">
+  <div class="header">
+    <h3>Quick Links</h3>
+  </div>
+
+  <div class="container">
+<a rel="Click Here" style="text-decoration:none;" href="loggedinJudges.php"><h5>&#9679;Judges</h5></a>
+    <a rel="Click Here" style="text-decoration:none;" href="loggedinAdvocate.php"><h5>&#9679;Advocates</h5></a>
+    <a rel="Click Here" style="text-decoration:none;" href="loggedInCS.php"><h5>&#9679;Case Status</h5></a>
+    <a rel="Click Here" style="text-decoration:none;" href="loggedinJV.php"> <h5>&#9679;Judgements &amp; Verdicts</h5></a>
+    <a rel="Click Here" style="text-decoration:none;" href="loggedincaveat.html"><h5>&#9679;Caveat</h5></a>
+    <a rel="Click Here" style="text-decoration:none;color:red;" href="loggedinCourtfees.html"><h5>&#9679;Court Fees</h5></a>
+  </div>
+</div>
+    </div>
+  
+
+  <div class="centerbar">
+      <h1>Insert Court Fees</h1>
+      <hr>
+      <form action="courtfees.php" method="POST">
+Case Type:<input type="text" name="c_type" required>
+Category:<input type="text" name="category" required>
+Sub-category:<input type="text" name="sub_category" >
+Fees:<input type="text" name="fees" required>
+<br><br>
+  <input type="submit"><br><br>
+      </form>
+</div>
+        </div>
+</body>
+<footer>
+  <p>Government Of India &#9679; 2018</p>
+</footer>
+</html>

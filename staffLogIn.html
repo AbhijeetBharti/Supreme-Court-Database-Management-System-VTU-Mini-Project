@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="box.css">
+    <link rel="stylesheet" type="text/css" href="menubar.css">
+    <link rel="stylesheet" type="text/css" href="css/pop.css">
+    <link rel="stylesheet" type="text/css" href="abtbody.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+function myFunction() {
+    document.getElementById("c").style.color = "red";
+}
+</script>
+
+<style>  
+    .container1 {
+  width:1000px; 
+  height: 500px;
+        
+}
+
+.leftbar {
+  width:300px; 
+  float:left; 
+   margin-top: 0px;
+  height: 150px;
+}
+.centerbar {
+  width:1000px; 
+  height: 150px; 
+  float:center; 
+  margin-top: 50px;
+  margin-left:400px;
+}
+     header
+{
+    background-color:#191970;
+	padding: 1px;
+    font-size: 15px;
+    color: white;
+}
+footer {
+    background-color: #191970;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    
+}
+</style>
+<style>
+.drop1 {
+    padding: 16px;
+    font-size: 16px;
+    border: darkblue;
+    cursor: pointer;
+}
+
+.drop1:hover, .drop1:focus {
+    background-color: #2980B9;
+}
+
+.drop1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#191970;
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop1 a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+
+	<title>Home</title>
+ 
+</head>
+<header>
+    	<center><h1>Supreme Court Of India</h1></center>
+    	<center><h3>|| यतो धर्मस्ततो जयः ||</h3></center>
+</header>
+
+		<div class="slideshow-container">
+<div class="mySlides fade">
+  
+  <img src="slide1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  
+  <img src="slide4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="slide3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+<ul>
+  <li><a class="active" href="staffLogIn.php">Home</a></li>
+  
+   <li style="float:right"><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+   
+ 
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.drop1')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</ul>
+    <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login.php" method="POST">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="supreme.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"></label><b>Username</b><br>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+        <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    <body>
+
+
+   <center><h3>DB Staff Log in</h3>
+  	<p>
+  	The Supreme Court of India is the highest judicial forum and final court of appeal under the Constitution of India, the highest constitutional court, with the power of judicial review. Consisting of the Chief Justice of India and a maximum of 30 other judges, it has extensive powers in the form of original, appellate and advisory jurisdictions.</p>
+
+<p>	As the final court of appeal of the country, it takes up appeals primarily against verdicts of the high courts of various states of the Union and other courts and tribunals. It safeguards fundamental rights of citizens and settles disputes between various governments in the country. As an advisory court, it hears matters which may specifically be referred to it under the constitution by President of India. It also may take cognisance of matters on its own (or suo moto), without anyone drawing its attention to them. The law declared by the supreme court becomes binding on all courts within India and also by the union and state governments.Per Article 142, it is the duty of the president to enforce the decrees of the supreme court.
+  	</p>
+  </center> 
+ 
+</body>
+<footer>
+  <p>Government Of India &#9679; 2018</p>
+</footer>
+</html>

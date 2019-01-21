@@ -1,0 +1,51 @@
+.sidebar_container
+{ float: left;
+  margin: 10px 20px 0 0;
+  width: 215px;
+  padding: 0;}
+
+.sidebar
+{ float: left;
+  width: 250px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+margin-right: 20px;}
+
+.sidebar_item
+{ font: normal 100% Arial, Helvetica, sans-serif;
+  width: 215px;}
+
+.sidebar h2
+{ padding: 5px 0 0 10px;
+  font: normal 140% Arial, Helvetica, sans-serif;
+  height: 30px;
+  text-shadow: 0px -1px 0px #000;
+  color: #fff;
+  background: #1D1D1D;
+  background: -moz-linear-gradient(#191970, #1d1d1d);
+  background: -o-linear-gradient(#535353, #1d1d1d);
+  background: -webkit-linear-gradient(#535353, #1d1d1d);
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}  
+#content
+{ width: 680px;
+  margin-bottom: 0px;
+  margin-left: 100px  
+  float: right;}
+
+.content_item
+{ width: 680px;
+  margin-top: 0px; 
+  margin-bottom: 0px;
+margin-left: 100px}
+  
+.content_container
+{ width: 320px;
+  padding: 50px;
+  margin-left: 100px;
+  float: right;}

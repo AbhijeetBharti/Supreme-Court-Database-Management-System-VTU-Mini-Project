@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="box.css">
+    <link rel="stylesheet" type="text/css" href="menubar.css">
+    <link rel="stylesheet" type="text/css" href="pop.css">
+    <link rel="stylesheet" type="text/css" href="abtbody.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<style>  
+     header
+{
+    background-color:#191970;
+	padding: 1px;
+    font-size: 15px;
+    color: white;
+}
+footer {
+    background-color: #191970;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 1200px;
+    
+}
+</style>
+<style>
+.drop1 {
+    padding: 16px;
+    font-size: 16px;
+    border: darkblue;
+    cursor: pointer;
+}
+
+.drop1:hover, .drop1:focus {
+    background-color: #2980B9;
+}
+
+.drop1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#191970;
+    min-width: 150px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop1 a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+
+	<title>History|Supreme Court Of India</title>
+ 
+</head>
+<header>
+    	<center><a style="text-decoration:none;color:white" href="home.html"><h1>Supreme Court Of India</h1></a></center>
+    	<center><h3>|| यतो धर्मस्ततो जयः ||</h3></center>
+</header>
+
+		<div class="slideshow-container">
+<div class="mySlides fade">
+  
+  <img src="slide1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  
+  <img src="slide4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="slide3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 1000); // Change image every 2 seconds
+}
+</script>
+<ul>
+  <li><a  href="home.html">Home</a></li>
+  <li><a  href="nc.html">Notices &amp; Circulars</a></li>
+    <li><a  href="do.php">Daily Orders</a></li>
+    <li><a   href="ef.html">E-Filling</a></li>
+
+   
+    <li style="float:right"> 
+    <div class="dropdown">
+<a class="active"id="drop1" onclick="myFunction()">About The Court</a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="history.html">History</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+</li>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.drop1')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</ul>
+    <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/supreme.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+        <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" style="color: blue" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+  </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    <body>
+    	<div>
+        <div class="card">
+  <div class="header">
+    <h3>Quick Links</h3>
+  </div>
+
+  <div class="container">
+    <a rel="Click Here" style="text-decoration:none" href="judges.php"><h5>&#9679;Judges</h5></a>
+    <a rel="Click Here" style="text-decoration:none" href="advocates.php"><h5>&#9679;Advocates</h5></a>
+    <a rel="Click Here" style="text-decoration:none" href="casestatus.php"><h5>&#9679;Case Status</h5></a>
+    <a rel="Click Here" style="text-decoration:none" href="jv.php"><h5>&#9679;Judgements &amp; Verdicts</h5>
+    </a><a rel="Click Here" style="text-decoration:none" href="cavet.php"> <h5>&#9679;Caveat</h5></a>
+    <a rel="Click Here" style="text-decoration:none" href="casecategory.php"><h5>&#9679;Case Category</h5></a>
+    <a rel="Click Here" style="text-decoration:none" href="cfshow.php"> <h5>&#9679;Court Fees</h5></a>
+  </div>
+  
+</div>
+<div class="desc">
+  <h2>History</h2>
+  <hr>
+  	<p>
+  	Supreme Court of India came into existence on 26th January, 1950 and is located on Tilak Marg, New Delhi. The Supreme Court of India functioned from the Parliament House till it moved to the present building. It has a 27.6 metre high dome and a spacious colonnaded verandah. For a peek inside, you'll have to obtain a visitor's pass from the front office.</p>
+    <p1>
+  <img src="history.jpg">
+  </p1>
+<p>	On the 28th of January, 1950, two days after India became a Sovereign Democratic Republic, the Supreme Court came into being. The inauguration took place in the Chamber of Princes in the Parliament building which also housed India's Parliament, consisting of the Council of States and the House of the People. It was here, in this Chamber of Princes, that the Federal Court of India had sat for 12 years between 1937 and 1950. This was to be the home of the Supreme Court for years that were to follow until the Supreme Court acquired its own present premises.
+  	</p>
+    <p>
+      The inaugural proceedings were simple but impressive. They began at 9.45 a.m. when the Judges of the Federal Court - Chief Justice Harilal J.Kania and Justices Saiyid Fazl Ali, M. Patanjali Sastri, Mehr Chand Mahajan, Bijan Kumar Mukherjea and S.R.Das - took their seats. In attendance were the Chief Justices of the High Courts of Allahabad, Bombay, Madras, Orissa, Assam, Nagpur, Punjab, Saurashtra, Patiala and the East Punjab States Union, Mysore, Hyderabad, Madhya Bharat and Travancore-Cochin. Along with the Attorney General for India, M.C. Setalvad were present the Advocate Generals of Bombay, Madras, Uttar Pradesh, Bihar, East Punjab, Orissa, Mysore, Hyderabad and Madhya Bharat. Present too, were Prime Minister, other Ministers, Ambassadors and diplomatic representatives of foreign States, a large number of Senior and other Advocates of the Court and other distinguished visitors.
+    </p>
+    <p>Taking care to ensure that the Rules of the Supreme Court were published and the names of all the Advocates and agents of the Federal Court were brought on the rolls of the Supreme Court, the inaugural proceedings were over and put under part of the record of the Supreme Court.</p>
+    <p>
+      After its inauguration on January 28, 1950, the Supreme Court commenced its sittings in a part of the Parliament House. The Court moved into the present building in 1958. The building is shaped to project the image of scales of justice. The Central Wing of the building is the Centre Beam of the Scales. In 1979, two New Wings - the East Wing and the West Wing - were added to the complex. In all there are 15 Court Rooms in the various wings of the building. The Chief Justice's Court is the largest of the Courts located in the Centre of the Central Wing
+    </p>
+    <p>
+      The original Constitution of 1950 envisaged a Supreme Court with a Chief Justice and 7 puisne Judges - leaving it to Parliament to increase this number. In the early years, all the Judges of the Supreme Court sat together to hear the cases presented before them. As the work of the Court increased and arrears of cases began to cumulate, Parliament increased the number of Judges from 8 in 1950 to 11 in 1956, 14 in 1960, 18 in 1978 and 26 in 1986. As the number of the Judges has increased, they sit in smaller Benches of two and three - coming together in larger Benches of 5 and more only when required to do so or to settle a difference of opinion or controversy.
+    </p>
+    <p>
+      The Supreme Court of India comprises the Chief Justice and 30 other Judges appointed by the President of India. Supreme Court Judges retire upon attaining the age of 65 years. In order to be appointed as a Judge of the Supreme Court, a person must be a citizen of India and must have been, for atleast five years, a Judge of a High Court or of two or more such Courts in succession, or an Advocate of a High Court or of two or more such Courts in succession for at least 10 years or he must be, in the opinion of the President, a distinguished jurist. Provisions exist for the appointment of a Judge of a High Court as an Ad-hoc Judge of the Supreme Court and for retired Judges of the Supreme Court or High Courts to sit and act as Judges of that Court.
+    </p>
+    <p>
+      The Constitution seeks to ensure the independence of Supreme Court Judges in various ways. A Judge of the Supreme Court cannot be removed from office except by an order of the President passed after an address in each House of Parliament supported by a majority of the total membership of that House and by a majority of not less than two-thirds of members present and voting, and presented to the President in the same Session for such removal on the ground of proved misbehaviour or incapacity. A person who has been a Judge of the Supreme Court is debarred from practising in any court of law or before any other authority in India.
+    </p>
+    <p>
+      The proceedings of the Supreme Court are conducted in English only. Supreme Court Rules, 1966 are framed under Article 145 of the Constitution to regulate the practice and procedure of the Supreme Court.
+    </p>
+            </div></div>
+    </body>
+<footer>
+  <p>Government Of India &#9679; 2018</p>
+</footer>
+</html>
